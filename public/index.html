@@ -31,6 +31,27 @@
 
 </div>
 
+<script id ="message-template" type="text/template">
+<li class="message">
+ <div class="message__title">
+   <h4>{{from}}</h4>
+   <span>{{createdAt}}</span>
+  </div>
+  <div class="message__body">
+    <p>{{text}}</p>
+    </div>
+</script>
+
+<script id ="location-message-template" type="text/template">
+<li class="message">
+ <div class="message__title">
+   <h4>{{from}}</h4>
+   <span>{{createdAt}}</span>
+  </div>
+  <div class="message__body">
+    <a href="{{url}}" target="_blank">Locate me here</a>
+    </div>
+</script>
 
 
     <!-- <p><button onclick="geoFindMe()">Show my location</button></p>
@@ -39,5 +60,6 @@
   <script src="/js/libs/jquery-3.3.1.min.js"></script>
   <script src="/js/index.js" charset="utf-8"></script>
   <script src="/js/libs/moment.js"></script>
+  <script src="/js/libs/mustache.js"></script>
   </body>
 </html>
